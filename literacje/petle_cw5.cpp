@@ -1,3 +1,7 @@
+
+/*5. Napisz program "petle_cw5.cpp", który pobiera od użytkownika określoną przez niego liczbę ocen,
+ a następnie oblicza i drukuje ich średnią.*/
+
 #include <iostream>
 using namespace std;
 

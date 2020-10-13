@@ -1,3 +1,8 @@
+
+#   6. Napisz program "petle_cw6.py", który pobiera od użytkownika
+#  liczby większe od 0, wartość 0 przerywa pobieranie. Program powinien zliczać liczby nieparzyste,
+#  a na koniec wydrukować ich ilość.
+
 def main(args):
 
     liczba = 1

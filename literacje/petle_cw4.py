@@ -1,3 +1,9 @@
+
+#  4. Napisz program "petle_cw4.py", który wypisuje wszystkie dwucyfrowe
+#  liczby parzyste podzielne przez 3 w zakresie <m, n> podanym przez użytkownika.
+
+
+
 def main(args):
 
     n = int(input("Podaj pierwsza liczbe: "))
