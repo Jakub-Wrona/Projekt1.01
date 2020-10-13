@@ -2,41 +2,35 @@
 /*5. Napisz program "petle_cw5.cpp", który pobiera od użytkownika określoną przez niego liczbę ocen,
  a następnie oblicza i drukuje ich średnią.*/
 
+
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-    int liczby;
-    int licznik = 0;
-    double srednia = 0;
 
-    int liczba;
+	double suma = 0, //zmienna przechowuje sumę liczb 
+	liczba; //zmienna przechowuje kolejne liczby podawane z klawiatury
+	unsigned int n; //zmienna odpowiedzialna za ilość liczb podanych z klawiatury
 
-    // petla pobierajaca liczby od uzytkownika
-    while(true)
-    {
-        cout << endl << "Wpisz liczbe numer " << licznik + 1 << ". Wpisz -1 aby zakonczyc wczytywanie. ";
-        cin >> liczba;
+	cout<<"Z jakiej ilości liczb chcesz liczyć średnią arytmetyczną: ";
+	cin>>n;
+	
+	cout<<endl;
 
-        if (liczba < 0)
-        {
-            // koniec wczytywania jezeli wpisano -1
-            break;
-        }
+	if(n>0) //średnią arytmetyczną można wyznaczać tylko z dodatniej ilości liczb
+	{
+		for(int i = 1;i<= n;i++)
+		{
+			cout<<"Podaj "<<i<<" liczbę: ";
+			cin>>liczba;
+			suma+=liczba; //lub suma = suma + liczba
+		}
+		cout<<"Średnia "<<n<<" liczb wynosi: "<<suma/n<<endl;
+	}
+	else
+		cout<<"Podałeś nieprawidłową wartość zmiennej n"<<endl;
 
-        liczby[licznik] = liczba;
-        licznik++; // zwieksza zmienna o 1
-    }
-
-    // oblicza srednia w petli
-    for (int i = 0; i<licznik; i++)
-    {
-        srednia = srednia + liczby[i];
-    }
-
-    srednia = srednia / licznik;
-
-    cout << "Srednia: " << srednia << endl;
 	return 0;
 }
