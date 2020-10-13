@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		{
 			cout<<"Podaj "<<i<<" liczbę: ";
 			cin>>liczba;
-			suma+=liczba; //lub suma = suma + liczba
+			suma+=liczba;
 		}
 		cout<<"Średnia "<<n<<" liczb wynosi: "<<suma/n<<endl;
 	}
