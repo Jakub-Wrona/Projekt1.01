@@ -1,4 +1,6 @@
 
+/*3. Napisz program "petle_cw3.cpp", który wyświetla kwadraty kolejnych liczb naturalnych,
+ począwszy od zera a skończywszy na kwadracie liczby podanej przez użytkownika.*/
 
 #include <iostream>
 
